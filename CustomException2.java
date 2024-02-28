@@ -24,12 +24,10 @@ class ElectionCommission {
 		}
 		else if(age < 18) {
 			UnderAge uE=new UnderAge();
-			//System.out.println("RE-ENTER");
 			throw uE;
 		}
 		else {
 			OverAge oE=new OverAge();
-			//System.out.println("You are too old to vote");
 			throw oE;
 		}
 	}
